@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "start": "mdx-deck tensight.mdx"
+    },
+    "devDependencies": {
+        "mdx-deck": "^4.1.1",
+        "rebass": "^4.0.7"
+    },
+    "dependencies": {
+        "acorn": "^7.1.1",
+        "typescript": "^3.8.3"
+    }
+}
