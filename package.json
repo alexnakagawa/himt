@@ -1,6 +1,7 @@
 {
+    "path": "decks/",
     "scripts": {
-        "start": "mdx-deck tensight.mdx"
+        "start": "mdx-deck decks/$npm_config_proj.mdx"
     },
     "devDependencies": {
         "mdx-deck": "^4.1.1",
