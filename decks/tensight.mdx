@@ -1,8 +1,15 @@
-import { themes, Image } from 'mdx-deck'
+import { book, highlight } from '@mdx-deck/themes'
+import { Image } from 'mdx-deck'
 import { Text, Button, Link } from 'rebass'
 
-export const theme = themes.book
+export const theme = { ...book, ...highlight}
 
+
+<Header>
+    <Text fontFamily='Lato' padding='1em'>
+        himt.(Tensight)
+    </Text>
+</Header>
 <Footer>
     <Text fontFamily='Lato' padding='1em' textAlign='right'>
         Created with ☕️ by Alex Nakagawa
@@ -22,7 +29,27 @@ export const theme = themes.book
 Tensight is a large passion project turned start-up started in June of 2019.
 
 - It was first conceptualized as a database of Asian-American Athletes.
-- By the end of the summer, the database had grown to encompass Asian atheltes from many of the big sports
+- By the end of the summer, the database had grown to encompass Asian athletes from many of the big sports.
+- **Now, it aims to be a platform for athletes from _non-traditional backgrounds_ to play sports _at the next level_.**
+
+---
+# Humble Beginnings
+
+I was a complete novice to all things web development before this project.
+Only thing I knew somewhat well was _creating databases_.
+
+Still, **we all start from somewhere**. I saw being contained in self-quarantine as a golden opportunity to learn something new.
+
+```shellscript
+npx degit sveltejs/template tensight
+```
+
+---
+# The Right Tool for the Job
+
+I decided on [Svelte](https://svelte.dev/) for my new project. It's server-side rendering was blazing fast, the templating was extremely user-friendly, and had some of the best documentation I had ever read.
+
+<Image src='../images/svelte.png'></Image>
 
 ---
 
