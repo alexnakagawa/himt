@@ -29,7 +29,9 @@ export const theme = { ...book, ...highlight}
 Tensight is a large passion project turned start-up started in June of 2019.
 
 - It was first conceptualized as a database of Asian-American Athletes.
+
 - By the end of the summer, the database had grown to encompass Asian athletes from many of the big sports.
+
 - **Now, it aims to be a platform for athletes from _non-traditional backgrounds_ to play sports _at the next level_.**
 
 ---
@@ -45,11 +47,79 @@ npx degit sveltejs/template tensight
 ```
 
 ---
+
 # The Right Tool for the Job
 
 I decided on [Svelte](https://svelte.dev/) for my new project. It's server-side rendering was blazing fast, the templating was extremely user-friendly, and had some of the best documentation I had ever read.
 
-<Image src='../images/svelte.png'></Image>
+<Image 
+    src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd2odgkulk9w7if.cloudfront.net%2Fimages%2Fdefault-source%2Fblogs%2Fsvelte-logo.png%3Fsfvrsn%3D6ce40cfe_0&f=1&nofb=1'
+    alt='svelte logo'
+    style={{
+        align: 'center',
+        maxWidth:'30%',
+        maxHeight:'30%',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+    }}
+></Image>
+
+---
+
+# The Right Tool for the Job (pt. 2)
+
+As a result the readability of my code has significantly improved.
+
+Svelte has helped me mature more as a fullstack developer than anything I've ever tried.
+
+Trust me -- I went through tutorial hell with others like React and Vue to get myself to Svelte (my savior).
+
+---
+
+## An Example in Code
+
+From this in React...
+
+```jsx
+import React, { useState } from 'react';
+
+export default () => {
+  const [a, setA] = useState(1);
+  const [b, setB] = useState(2);
+
+  function handleChangeA(event) {
+    setA(+event.target.value);
+  }
+
+  function handleChangeB(event) {
+    setB(+event.target.value);
+  }
+
+  return (
+    <div>
+      <input type="number" value={a} onChange={handleChangeA}/>
+      <input type="number" value={b} onChange={handleChangeB}/>
+
+      <p>{a} + {b} = {a + b}</p>
+    </div>
+  );
+};
+```
+---
+...to this in Svelte:
+
+```svelte
+<script>
+	let a = 1;
+	let b = 2;
+</script>
+
+<input type="number" bind:value={a}>
+<input type="number" bind:value={b}>
+
+<p>{a} + {b} = {a + b}</p>
+```
+💸💸💸
 
 ---
 
