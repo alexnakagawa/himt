@@ -1,15 +1,21 @@
 {
     "path": "decks/",
     "scripts": {
-        "start": "mdx-deck decks/$npm_config_proj.mdx"
+        "start": "mdx-deck decks/$npm_config_proj.mdx",
+        "build": "mdx-deck build decks/$npm_config_proj.mdx"
     },
     "devDependencies": {
         "mdx-deck": "^4.1.1",
         "rebass": "^4.0.7"
     },
     "dependencies": {
+        "@mdx-js/mdx": "^1.6.1",
+        "@mdx-js/react": "^1.6.1",
+        "mdx-deck": "^3.0.13",
+        "rebass": "^4.0.7",
         "acorn": "^7.1.1",
         "code-surfer": "^3.1.1",
+        "gatsby-plugin-mdx": "^1.2.6",
         "typescript": "^3.8.3"
     }
 }
